@@ -38,8 +38,9 @@ midImg.addEventListener("mouseout", () => {
  const logo = document.querySelector('h1');
 
  logo.addEventListener('dblclick', () => {
-     
+     logo.style.color = "yellow";
  })
 
- const 
-
+ window.addEventListener("resize", () => {
+    topImg.src="https://images.unsplash.com/photo-1527058918112-6e17a8213943?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+ })
