@@ -13,6 +13,7 @@ topImg.addEventListener("mouseleave", () => {
 
  const dest = document.querySelector('.content-destination p');
  const dest2 = document.querySelector('.content-destination');
+ const dest3 = document.querySelector('.content-destination h2');
  
 
  dest.addEventListener('click', () => {
@@ -23,6 +24,10 @@ topImg.addEventListener("mouseleave", () => {
  dest2.addEventListener('click', () => {
      dest2.style.background = "blue";
  } )
+
+ dest3.addEventListener('click', () => {
+    dest3.style.color = "pink";
+} )
 
 const midImg = document.querySelector('.content-section img');
 
@@ -38,9 +43,26 @@ midImg.addEventListener("mouseout", () => {
  const logo = document.querySelector('h1');
 
  logo.addEventListener('dblclick', () => {
-     logo.style.color = "yellow";
+     logo.style.color = "orange";
  })
 
  window.addEventListener("resize", () => {
     topImg.src="https://images.unsplash.com/photo-1527058918112-6e17a8213943?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
  })
+
+const bod = document.querySelector('body');
+
+window.addEventListener('scroll', () => {
+    bod.style.background = "yellow"
+});
+
+const introP = document.querySelector('.intro p');
+
+introP.addEventListener('mousedown', () => {
+    introP.style.background = "teal"
+})
+
+introP.addEventListener('mouseup', () => {
+    introP.style.background = ""
+})
+ 
