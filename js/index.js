@@ -41,3 +41,5 @@ midImg.addEventListener("mouseout", () => {
      
  })
 
+ const 
+
