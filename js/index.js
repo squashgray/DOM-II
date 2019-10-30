@@ -67,4 +67,11 @@ introP.addEventListener('mousedown', () => {
 introP.addEventListener('mouseup', () => {
     introP.style.background = ""
 })
+
+const navStop = document.querySelector('.nav-link');
+
+navStop.addEventListener("click", (event) => {
+    console.log("I WORK!");
+    event.preventDefault();
+  })
  
