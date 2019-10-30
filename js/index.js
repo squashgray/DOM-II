@@ -16,17 +16,19 @@ topImg.addEventListener("mouseleave", () => {
  const dest3 = document.querySelector('.content-destination h2');
  
 
- dest.addEventListener('click', () => {
+ dest.addEventListener('click', (event) => {
      dest.style.transform = "scale(1.4)";
      dest.style.color = "gold";
+     event.stopPropagation();
  })
 
  dest2.addEventListener('click', () => {
      dest2.style.background = "blue";
  } )
 
- dest3.addEventListener('click', () => {
+ dest3.addEventListener('click', (event) => {
     dest3.style.color = "pink";
+    event.stopPropagation();
 } )
 
 const midImg = document.querySelector('.content-section img');
